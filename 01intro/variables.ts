@@ -5,9 +5,18 @@ console.log(greetings);
 
 //number
 
-let userId: number = 3344555;
+let userId = 3344555;
 
+userId.toFixed(2);
 //boolean
 let isLoggedIn: boolean = false;
+
+let hero: string;
+
+function getHero(){
+  return 'thor';
+}
+
+hero = getHero();
 
 export{}
