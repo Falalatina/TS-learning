@@ -15,3 +15,10 @@ var LoginUser = function (email, name, isPaid) {
 getUpper('88m');
 addTwo(5);
 signUpUser('name', 'mops');
+function getValue(myVal) {
+    if (myVal > 5) {
+        return true;
+    }
+    ;
+    return '200 OK';
+}
