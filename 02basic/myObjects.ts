@@ -13,15 +13,51 @@
 //   return {name: 'reactjs', price: 399}
 //  }
 
-type User ={
-  name: string,
-  email: string,
+// type User ={
+//   name: string,
+//   email: string,
+//   isActive: boolean 
+// }
+
+// function createUser(user: User):User{
+//   return user;
+// }
+
+// createUser({name:"wiki",email:"mops",isActive:true});
+
+
+
+type User = {
+  readonly _id: string
+  name: string
+  email: string
   isActive: boolean
+  creditDetail?: number
 }
 
-function createUser(user: User){}
+let myUser: User = {
+  _id: "123",
+  name: "h",
+  email: "h@h.com",
+  isActive: true
+}
 
-createUser({name:"wiki",email:"mops",isActive:true});
+type cardNumber = {
+  cardNumber: string
+}
+
+type cardDate= {
+  cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+  cvv: number
+}
+
+myUser.email = "hello";
+
+
+
 
 
 export{}
