@@ -42,7 +42,7 @@ function consoleError(errmsg: string): void{
   
 }
 
-function handleError(errmsg: string): void{
+function handleError(errmsg: string): never{
   console.log(errmsg);
   throw new Error(errmsg);
   
