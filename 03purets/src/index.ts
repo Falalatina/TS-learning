@@ -1,4 +1,13 @@
-console.log("ts is here still");
-console.log("ts is amazing");
+class User {
+  email: string
+  name: string
+  city: string|number = ""
+  constructor(email:string, name:string){
+    this.email =email;
+    this.name = name;
+  }
+}
 
-console.log('hh');
+const hitesh = new User( "mops.com", "hitesh");
+hitesh.city = 2;
+//hitesh.city = "Jaipur"
