@@ -41,3 +41,5 @@ class User {
 }
 const hitesh = new User( "mops.com", "hitesh");
 //hitesh.city 
+
+//hitesh.deleteToken()
