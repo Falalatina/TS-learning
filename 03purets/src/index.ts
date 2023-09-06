@@ -10,6 +10,8 @@
 // }
 
 class User {
+
+  private _courseCount = 1;
  
   readonly city: string|number = 2; //# === private
   constructor(
@@ -17,8 +19,10 @@ class User {
     public name:string,
     private userId?:string
     ){
-    
-    
+  }
+     
+  get getAppleEmail(): string{
+    return `apple${this.email}`
   }
 }
 const hitesh = new User( "mops.com", "hitesh");

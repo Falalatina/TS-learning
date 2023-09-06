@@ -13,7 +13,11 @@ class User {
         this.email = email;
         this.name = name;
         this.userId = userId;
+        this._courseCount = 1;
         this.city = 2; //# === private
+    }
+    get getAppleEmail() {
+        return `apple${this.email}`;
     }
 }
 const hitesh = new User("mops.com", "hitesh");
