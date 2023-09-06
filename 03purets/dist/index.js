@@ -16,8 +16,20 @@ class User {
         this._courseCount = 1;
         this.city = 2; //# === private
     }
+    deleteToken() {
+        console.log("token deleted");
+    }
     get getAppleEmail() {
         return `apple${this.email}`;
+    }
+    get courseCount() {
+        return this._courseCount;
+    }
+    set courseCount(courseNum) {
+        if (courseNum <= 1) {
+            throw new Error("course count should be more then 1");
+        }
+        this._courseCount = courseNum;
     }
 }
 const hitesh = new User("mops.com", "hitesh");

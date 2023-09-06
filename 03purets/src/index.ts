@@ -20,9 +20,23 @@ class User {
     private userId?:string
     ){
   }
+  private deleteToken(){
+    console.log("token deleted");
+  }
      
   get getAppleEmail(): string{
     return `apple${this.email}`
+  }
+
+  get courseCount():number {
+    return this._courseCount
+  }
+
+  set courseCount(courseNum){
+    if (courseNum <=1) {
+      throw new Error("course count should be more then 1")  
+    }
+    this._courseCount = courseNum
   }
 }
 const hitesh = new User( "mops.com", "hitesh");
