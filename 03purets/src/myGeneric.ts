@@ -25,3 +25,7 @@ interface Bottle{
 }
 
 identityFout<Bottle>({brand: 'olala', type: 2})
+
+function getSearchProducts<T>(products: T[]): T{
+  return products[3]
+}
