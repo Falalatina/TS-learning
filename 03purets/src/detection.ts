@@ -13,7 +13,7 @@ function provideId(id: string | null){
 }
 
 // function printAll(val: string | string[] | null){
-//   if (val) {
+//   if (val ==! null) {
 //     if (typeof val === "object") {
 //       for( const s of val){
 //         console.log(s);  
